@@ -114,7 +114,10 @@ public class AddVisitsActivity extends AppCompatActivity implements View.OnClick
         databaseHelper.addVisits(mPetVisits);
 
         Toast.makeText(this, getString(R.string.succesful_visit), Toast.LENGTH_LONG).show();
+        Intent accountsIntent = new Intent(activity, ProfileActivity.class);
+        accountsIntent.putExtra("PET",mPetVisits.getPet_id());
         emptyInputEditText();
+        startActivity(accountsIntent);
 
 
         }

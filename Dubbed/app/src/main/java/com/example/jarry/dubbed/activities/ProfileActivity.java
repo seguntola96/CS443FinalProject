@@ -33,6 +33,7 @@ public class ProfileActivity extends AppCompatActivity{
     List<PetVisits> visitList;
     ListView listView;
     DatabaseHelper db;
+    boolean created;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +41,9 @@ public class ProfileActivity extends AppCompatActivity{
         setContentView(R.layout.profile_view);
 
         db = new DatabaseHelper(activity);
-        Intent intent = getIntent();
-        int pet_id = intent.getIntExtra("PET", 0);
+        pet = new Pets();
+        Intent i = getIntent();
+        int pet_id = i.getIntExtra("PET", 0);
         visitList = db.getPetVisits(String.valueOf(pet_id));
 
         pet = db.getPet(String.valueOf(pet_id));
@@ -59,14 +61,18 @@ public class ProfileActivity extends AppCompatActivity{
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), AddVisitsActivity.class);
                 intent.putExtra("PET", pet.getPet_id());
+
+                created = true;
                 startActivity(intent);
             }
         });
 
+            File imgFile = new File(pet.getImagePath());
+            Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
+            imageView.setImageBitmap(myBitmap);
 
-        File imgFile = new  File( pet.getImagePath());
-        Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
-        imageView.setImageBitmap(myBitmap);
+
+
         textViewName.setText(pet.getName());
         textViewAge.setText(Integer.toString(pet.getPetAge()));
         textViewBreed.setText(pet.getBreed());
