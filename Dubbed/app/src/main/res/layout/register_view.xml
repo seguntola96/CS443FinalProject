@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/linearLayout2"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/vet2"
+              tools:context=".activities.RegisterActivity">
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="@string/greeting"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/textInputEditTextPetName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pet_name_hint"
+        android:textColorHint="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/textInputEditTextAnimal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pet_animal_hint"
+        android:textColorHint="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/textInputEditTextBreed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pet_breed_hint"
+        android:textColorHint="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/black" />
+
+
+    <EditText
+        android:id="@+id/textInputEditTextAge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pet_age_hint"
+        android:textColorHint="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/textInputEditTextOwner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pet_owner_hint"
+        android:textColorHint="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/upload_hint"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@android:color/white"/>
+    <ImageView
+        android:id="@+id/pet_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_account_circle_black"/>
+
+    <Button
+        android:id="@+id/register_pet_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/register_button_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@android:color/white"/>
+
+</LinearLayout>

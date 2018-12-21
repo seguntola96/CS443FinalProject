@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/veto"
+    tools:context=".activities.LoginActivity">
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="@string/greeting"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/textInputEditTextEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:layout_marginTop="100dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+            
+        <EditText
+            android:id="@+id/textInputEditTextPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:layout_marginTop="50dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/login_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_blue_bright"/>
+    
+        <TextView
+            android:id="@+id/textViewLinkRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/register_text"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="16sp"/>
+  </LinearLayout>

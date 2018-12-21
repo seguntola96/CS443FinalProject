@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home"
+        android:title="@string/menu_home"
+        support:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_register"
+        android:checkable="false"
+        android:icon="@drawable/register"
+        android:title="Register"
+        support:showAsAction="always" ></item>
+
+    <item
+        android:id="@+id/menu_setting"
+        android:title="@string/menu_settings"/>
+
+    <item
+        android:id="@+id/menu_about_us"
+        android:title="@string/menu_about_us" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/menu_logout"/>
+
+</menu>
